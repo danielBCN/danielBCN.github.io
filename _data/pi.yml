@@ -1,0 +1,25 @@
+- name: Daniel Barcelona-Pons
+  photo: headshot.jpg
+  info: Researcher, Universitat Rovira i Virgili
+  email: daniel.barcelona@urv.cat
+  github: https://github.com/danielBCN
+  # researchgate: https://www.researchgate.net/
+  scholar: https://scholar.google.com/citations?user=HJIugqkAAAAJ
+  orcid: https://orcid.org/0000-0002-6051-9424
+  dblp: https://dblp.org/pid/224/0273.html
+  linkedin: https://www.linkedin.com/in/daniel-barcelona-pons/
+  # cv: cv/cv.pdf
+  # Change the number below to the number of "educations" you have (up to 6)
+  number_educ: 3
+  education1: "(2022) Ph.D. Computer Science and Mathematics of Security, Universitat Rovira i Virgili"
+  education2: "(2018) M.S. Computational Engineering and Mathematics , Universitat Rovira i Virgili / Universitat Oberta de Catalunya"
+  education3: "(2017) B.S. Computer Engineering, Universitat Rovira i Virgili"
+  # education4: 
+  # education5: 
+  # education6: 
+  education1short: (2022) Ph.D. Computer Science, URV
+  education2short: (2018) M.S. Computational Eng., URV/UOC
+  education3short: (2017) B.S. Computer Eng., URV
+  # education4short: 
+  # education5short: 
+  # education6short: 

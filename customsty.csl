@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="en-US">
+  <info>
+    <title>Custom style based on ACM SIG Proceedings ("et al." for 15+ authors)</title>
+    <category citation-format="numeric"/>
+    <category field="science"/>
+    <category field="engineering"/>
+  </info>
+  <macro name="author">
+    <choose>
+      <if type="webpage">
+        <text variable="title" suffix=":"/>
+      </if>
+      <else>
+        <names variable="author">
+          <name and="text" delimiter=", "/>
+          <label form="short" prefix=" "/>
+          <substitute>
+            <names variable="editor"/>
+            <names variable="translator"/>
+          </substitute>
+        </names>
+      </else>
+    </choose>
+  </macro>
+  <macro name="editor">
+    <names variable="editor">
+      <name initialize-with="." delimiter=", " and="text"/>
+      <label form="short" prefix=", "/>
+    </names>
+  </macro>
+  <macro name="access">
+    <choose>
+      <if type="article-journal" match="any">
+        <text variable="DOI" prefix=" DOI:https://doi.org/"/>
+      </if>
+    </choose>
+  </macro>
+  <citation collapse="citation-number">
+    <sort>
+      <key variable="citation-number"/>
+    </sort>
+    <layout prefix="[" suffix="]" delimiter=", ">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+  <bibliography entry-spacing="1" second-field-align="flush" et-al-min="15" et-al-use-first="1">
+    <sort>
+      <key macro="author"/>
+      <key variable="title"/>
+    </sort>
+    <layout suffix=".">
+      <!-- <text variable="citation-number" prefix="[" suffix="] "/> --> 
+      <!-- <choose>
+        <if type="paper-conference">
+          <group delimiter=". " suffix=". ">
+            <text variable="title"/>
+          </group>
+        </if>
+        <else-if type="article-journal">
+          <group delimiter=". " suffix=". ">
+            <text variable="title"/>
+          </group>
+        </else-if>
+        <else-if type="patent">
+          <group delimiter=". " suffix=". ">
+            <text variable="title"/>
+          </group>
+        </else-if>
+        <else-if type="thesis">
+          <group delimiter=". " suffix=". ">
+            <text variable="title" font-style="italic"/>
+          </group>
+        </else-if>
+        <else-if type="report">
+          <group delimiter=". " suffix=". ">
+            <text variable="title" font-style="italic"/>
+          </group>
+        </else-if>
+        <else-if type="chapter paper-conference" match="any">
+          <group delimiter=". " suffix=". ">
+            <text variable="title"/>
+          </group>
+        </else-if>
+        <else>
+          <group delimiter=". " suffix=". ">
+            <text variable="title"/>
+          </group>
+        </else>
+      </choose> -->
+
+      <text macro="author" suffix=". "/>
+      <!-- <date variable="issued" suffix=". ">
+        <date-part name="year"/>
+      </date> -->
+
+      <choose>
+        <if type="paper-conference">
+          <group delimiter=". " suffix=".">
+            <group delimiter=" ">
+              <text variable="container-title" font-style="italic"/>
+              <group delimiter=", ">
+                <group delimiter=", " prefix="(" suffix=")">
+                  <!-- <text variable="publisher-place"/> -->
+                  <text variable="collection-title"/>
+                  <!-- <date variable="issued">
+                    <date-part name="month" form="short" suffix=" "/>
+                    <date-part name="year"/>
+                  </date> -->
+                </group>
+                <!-- <text variable="page"/> -->
+              </group>
+            </group>
+          </group>
+        </if>
+        <else-if type="article-journal">
+          <group delimiter=". " suffix=".">
+            <text variable="container-title" font-style="italic"/>
+            <group delimiter=", ">
+              <text variable="volume"/>
+              <group delimiter=" ">
+                <text variable="issue"/>
+                <date variable="issued" prefix="(" suffix=")">
+                  <date-part name="month" form="short" suffix=" "/>
+                  <date-part name="year"/>
+                </date>
+              </group>
+              <!-- <text variable="page"/> -->
+            </group>
+          </group>
+        </else-if>
+        <else-if type="patent">
+          <group delimiter=". " suffix=".">
+            <text variable="number"/>
+            <date variable="issued">
+              <date-part name="month" form="short" suffix=" "/>
+              <date-part name="day" suffix=", "/>
+              <date-part name="year"/>
+            </date>
+          </group>
+        </else-if>
+        <else-if type="thesis">
+          <group delimiter=". " suffix=".">
+            <!-- <text variable="archive_location" prefix="Doctoral Thesis #"/> -->
+            <text variable="publisher" prefix="Doctoral Thesis. "/>
+          </group>
+        </else-if>
+        <else-if type="report">
+          <group delimiter=". " suffix=".">
+            <text variable="number" prefix="Technical Report #"/>
+            <text variable="publisher"/>
+          </group>
+        </else-if>
+        <else-if type="webpage">
+          <group delimiter=". " suffix=".">
+            <text variable="URL" font-style="italic"/>
+            <date variable="accessed" prefix="Accessed: ">
+              <date-part name="year" suffix="-"/>
+              <date-part name="month" form="numeric-leading-zeros" suffix="-"/>
+              <date-part name="day" form="numeric-leading-zeros"/>
+            </date>
+          </group>
+        </else-if>
+        <else-if type="chapter paper-conference" match="any">
+          <group delimiter=". " suffix=".">
+            <text variable="container-title" font-style="italic"/>
+            <text macro="editor"/>
+            <text variable="publisher"/>
+            <text variable="page"/>
+          </group>
+        </else-if>
+        <else-if type="bill book graphic legal_case legislation motion_picture report song" match="any">
+          <group delimiter=". " suffix=".">
+            <text variable="title" font-style="italic"/>
+            <text variable="publisher"/>
+          </group>
+        </else-if>
+        <else>
+          <group delimiter=". " suffix=".">
+            <text variable="container-title" font-style="italic"/>
+            <text variable="note" font-style="italic"/>
+            <text variable="publisher"/>
+            <!-- <text variable="URL" prefix=" URL: "/> -->
+          </group>
+        </else>
+      </choose>
+      <!-- <text macro="access"/> -->
+    </layout>
+  </bibliography>
+</style>

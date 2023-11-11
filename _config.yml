@@ -1,0 +1,113 @@
+# Site settings
+title: Daniel Barcelona-Pons
+email: daniel.barcelona@urv.cat
+description: Academic webpage of Dr. Daniel Barcelona-Pons
+baseurl: ""
+url: ""
+
+# Google analytics ID: Uncomment and your own, if you like
+# google_analytics: XX
+# google_analytics_4: XXX
+# google_tag_manager: XXX
+
+# Footer info
+affiliation: >
+    Daniel Barcelona-Pons, PhD<br/>
+    <a href="https://urv.cat" target="_blank"> Universitat Rovira i Virgili</a><br/>
+    <a href="https://deim.urv.cat/" target="_blank"> Enginyeria Informàtica i Matemàtiques<a/>
+
+location: >
+  Enginyeria Informàtica i Matemàtiques<br/>
+  Universitat Rovira i Virgili<br/>
+  Av. Països Catalans, 26<br/>
+  43007 Tarragona (Spain)
+
+contact: >
+    <a href="mailto:daniel.barcelona@urv.cat" target="_blank"><i class="fa fa-envelope fa-1x"></i> - Email</a> <br/>
+    <a href="https://twitter.com/_daniel_BCN" target="_blank"><i class="fa fa-twitter fa-1x"></i> - Twitter</a> <br/>
+    <a href="https://github.com/danielBCN" target="_blank"><i class="fa fa-github fa-1x"></i> - GitHub</a> <br/>
+    <a href="https://www.linkedin.com/in/daniel-barcelona-pons/" target="_blank"><i class="fa fa-linkedin fa-1x"></i> - LinkedIn</a> <br/>
+
+# Pages shown in navbar
+nav_pages:
+  - name: about
+  - name: publications
+  # - name: talks
+  - name: research
+  # - name: software
+  # - name: team
+  # - name: teaching
+
+include:
+  - .htaccess
+  - _pages
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  parse_block_html: true # default for kramdown is false. This will enable using Markdown links
+
+
+plugins: ['jekyll/scholar']
+
+scholar:
+
+  last_name: Barcelona-Pons
+  first_name: [Daniel]
+
+  style: customsty
+  locale: en
+
+  source: /assets/
+  bibliography: ref.bib
+  bibliography_template: bibtemplate
+  sort_by: year, month
+  order: descending
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+  query: "@*"
+
+  bibtex_skip_fields:
+    - abstract
+    - month_numeric
+    - pdf
+    - url
+
+  bibliography_list_attributes:
+    reversed: "reversed"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - update_bootstrap.sh
+  - switch_theme.sh
+  - tags
+  - Rakefile
+  - .gitignore
+  - package.json
+# Hidden pages:
+  - _pages/talks
+  - _pages/software
+  - _pages/team
+  - _pages/allnews
+  - _pages/teaching
