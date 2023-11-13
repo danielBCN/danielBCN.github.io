@@ -104,7 +104,7 @@ The EXTRACT platform will improve the complete lifecycle of extreme data mining 
 
 <div class="jumbotron">
 <div class="col-md-12 col-sm-12">
-<h4><a href="https://iris.urv.cat/en/ipublic/item/8645659" target="_blank">High-performance serverless platform for hybrid CLoud-Edge systems</a></h4>
+<h4><a href="https://iris.urv.cat/en/ipublic/item/8645659" target="_blank">High-performance serverless platform for hybrid Cloud-Edge systems</a></h4>
 <div class="row">
 <div class="col-sm-4">
 
