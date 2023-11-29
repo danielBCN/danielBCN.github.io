@@ -11,13 +11,23 @@
   pdf      = {2022 - Daniel Barcelona Pons - Towards Enhanced State Management for Serverless Computation.pdf}
 }
 
-@unpublished{barcelonapons_glider_2023,
-  author   = {Barcelona-Pons, Daniel and Garc\'{i}a-L\'{o}pez, Pedro and Metzler, Bernard},
-  note     = {To appear in Middleware'23},
-  title    = {Glider: Serverless Ephemeral Stateful Near-Data Computation},
-  year     = {2023},
-  abstract = {Serverless data analytics generate a large amount of intermediate data during computation stages. However, serverless functions, which are short-lived and lack direct communication, face significant challenges in managing this data effectively. The traditional approach of using object storage to carry the data proves to be slow and costly, as it involves constant movement of data back and forth. Although specialized ephemeral storage solutions have been developed to address this issue, they fail to tackle the fundamental challenge of minimizing data movements. This work focuses on incorporating near-data computation into an ephemeral storage system to reduce the volume of transferred data in serverless analytics. We present Glider with the aim to enhance communication between serverless compute stages, allowing data to smoothly "glide" through the processing pipeline instead of bouncing between different services. Glider achieves this by leveraging stateful near-data execution of complex data-bound operations and an efficient I/O streaming interface. Under evaluation, it reduces data transfers by up to 99.7%, improves storage utilization by up to 99.8%, and enhances performance by up to 2.7×. In sum, Glider improves serverless data analytics by optimizing data movement, streamlining processing, and avoiding redundant transfers.},
-  pdf      = {Middleware23 - Glider - Author version.pdf}
+@inproceedings{barcelonapons_glider_2023,
+  author    = {Barcelona-Pons, Daniel and Garc\'{i}a-L\'{o}pez, Pedro and Metzler, Bernard},
+  title     = {Glider: Serverless Ephemeral Stateful Near-Data Computation},
+  year      = {2023},
+  isbn      = {9798400701771},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3590140.3629119},
+  doi       = {10.1145/3590140.3629119},
+  abstract  = {Serverless data analytics generate a large amount of intermediate data during computation stages. However, serverless functions, which are short-lived and lack direct communication, face significant challenges in managing this data effectively. The traditional approach of using object storage to carry the data proves to be slow and costly, as it involves constant movement of data back and forth. Although specialized ephemeral storage solutions have been developed to address this issue, they fail to tackle the fundamental challenge of minimizing data movements. This work focuses on incorporating near-data computation into an ephemeral storage system to reduce the volume of transferred data in serverless analytics. We present Glider with the aim to enhance communication between serverless compute stages, allowing data to smoothly "glide" through the processing pipeline instead of bouncing between different services. Glider achieves this by leveraging stateful near-data execution of complex data-bound operations and an efficient I/O streaming interface. Under evaluation, it reduces data transfers by up to 99.7\%, improves storage utilization by up to 99.8\%, and enhances performance by up to 2.7×. In sum, Glider improves serverless data analytics by optimizing data movement, streamlining processing, and avoiding redundant transfers.},
+  booktitle = {Proceedings of the 24th International Middleware Conference},
+  pages     = {247–260},
+  numpages  = {14},
+  keywords  = {Serverless, stateful, cloud, near-data, ephemeral, intermediate data},
+  location  = {Bologna, Italy},
+  series    = {Middleware '23},
+  pdf       = {Middleware23 - Glider - Author version.pdf}
 }
 
 @inproceedings{barcelonapons_crucial_2019,
@@ -110,31 +120,4 @@
   series    = {WOSC '18},
   abstract  = {Since the appearance of Amazon Lambda in 2014, all major cloud providers have embraced the "Function as a Service" (FaaS) model, because of its enormous potential for a wide variety of applications. As expected (and also desired), the competition is fierce in the serverless world, and includes aspects such as the run-time support for the orchestration of serverless functions. In this regard, the three major production services are currently Amazon Step Functions (December 2016), Azure Durable Functions (June 2017), and IBM Composer (October 2017), still young and experimental projects with a long way ahead. In this article, we will compare and analyze these three serverless orchestration systems under a common evaluation framework. We will study their architectures, programming and billing models, and their effective support for parallel execution, among others. Through a series of experiments, we will also evaluate the run-time overhead of the different infrastructures for different types of workflows.}
 }
-
-
-
-
-@incollection{example_invited_talk,
-  author    = {J. Doe},
-  note      = {Example Location},
-  publisher = {Example Talk Name},
-  year      = {2040},
-  keywords  = {invited}
-}
-
-@software{example_software,
-  author = {J. Doe},
-  title  = {Example software},
-  url    = {https://example.com},
-  date   = {2040}
-}
-
-@incollection{example_conference,
-  author = {J. Doe},
-  title  = {Example talk},
-  note   = {Example Conference},
-  year   = {2040}
-}
-
-
 
