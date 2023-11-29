@@ -3,7 +3,7 @@ title: Daniel Barcelona-Pons
 email: daniel.barcelona@urv.cat
 description: Academic webpage of Dr. Daniel Barcelona-Pons
 baseurl: ""
-url: ""
+url: "https://danielbcn.github.io/"
 
 # Google analytics ID: Uncomment and your own, if you like
 # google_analytics: XX
@@ -62,7 +62,7 @@ kramdown:
   parse_block_html: true # default for kramdown is false. This will enable using Markdown links
 
 
-plugins: ['jekyll/scholar']
+plugins: ['jekyll/scholar', 'jekyll-sitemap']
 
 scholar:
 
@@ -106,7 +106,7 @@ exclude:
   - .gitignore
   - package.json
 # Hidden pages:
-  - _pages/talks
+  # - _pages/talks
   - _pages/software
   - _pages/team
   - _pages/allnews
