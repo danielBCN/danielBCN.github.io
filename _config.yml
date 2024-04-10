@@ -106,7 +106,7 @@ exclude:
   - .gitignore
   - package.json
 # Hidden pages:
-  # - _pages/talks
+  - _pages/talks
   - _pages/software
   - _pages/team
   - _pages/allnews

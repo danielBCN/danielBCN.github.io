@@ -41,34 +41,34 @@
     {% endfor %}
 {% endif %}
 
-{% if bibtest %}
-<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.pdf }}" target="_blank"><button
-        class="btn btn-success btm-sm">PDF</button></a>
-{% endif %}
-
 {% if entry.doi %}
 {% if entry.type == 'unpublished' %}
 <a href="{{ entry.doi | prepend: 'https://arxiv.org/abs/' }}" target="_blank"><button
-        class="btn btn-primary btm-sm">ARXIV</button></a>
+        class="btn btn-info btm-sm">ARXIV</button></a>
 {% else %}
 <a href="{{ entry.doi | prepend: 'http://doi.org/' }}" target="_blank"><button
-        class="btn btn-primary btm-sm">DOI</button></a>
+        class="btn btn-info btm-sm">DOI</button></a>
 {% endif %}
 {% else-if entry.url %}
 {% if entry.type == 'unpublished' or entry.type == 'phdthesis' %}
 {% if entry.url %}
 <a href="{{ entry.url }}" target="_blank"><button
-        class="btn btn-primary btm-sm">URL</button></a>
+        class="btn btn-info btm-sm">URL</button></a>
 {% endif %}
 {% endif %}
 {% endif %}
 
 {% if entry.type == 'article' or entry.type == 'phdthesis' or entry.type == 'inproceedings' or entry.type == 'report' %}
-<button class="btn btn-danger btm-sm" onclick="toggleBibtex{{entry.key}}()">BIB</button>
+<button class="btn btn-success btm-sm" onclick="toggleBibtex{{entry.key}}()">BIB</button>
 {% endif %}
 
 {% if entry.abstract %}
-<button class="btn btn-warning btm-sm" onclick="toggleAbstract{{entry.key}}()">ABSTRACT</button>
+<button class="btn btn-secondary btm-sm" onclick="toggleAbstract{{entry.key}}()">ABSTRACT</button>
+{% endif %}
+
+{% if bibtest %}
+<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.pdf }}" target="_blank"><button
+        class="btn btn-primary btm-sm">PDF</button></a>
 {% endif %}
 
 <div id="a{{entry.key}}" style="display: none; background-color:#eeeeee; border-radius:5px; padding:10px; margin-bottom:20px;">
@@ -76,7 +76,8 @@
 </div>
 
 <div id="b{{entry.key}}"
-    style="display: none; background-color:#eeeeee; border-radius:5px; padding:10px; margin-bottom:20px;">
+    style="display: none; background-color:#eeeeee; border-radius:5px; padding:10px; margin-bottom:20px;"
+    class="text-justify">
     {{entry.abstract}}
 </div>
 
