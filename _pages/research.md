@@ -36,6 +36,10 @@ iframe {
   text-transform: lowercase;
   color: #0071bc;
 }
+.seemorebtn:hover {
+  color: #003170;
+  text-decoration: underline;
+}
 </style>
 
 ## Research projects
@@ -95,7 +99,7 @@ Data has become one of the most valuable assets driving the digital transformati
 To fill this technological gap, EXTRACT will deliver <span id="extractdots">...</span><span id="extractmore" style="display: none">a data-driven open-source software platform integrating the most relevant technologies, to facilitate the development of trustworthy, accurate, fair and green data mining workflows able to generate high-quality actionable knowledge.
 <br />
 The EXTRACT platform will improve the complete lifecycle of extreme data mining workflows, significantly enhancing performance, energy-efficiency, scalability and security, while fulfilling the extreme data characteristics in a holistic way. Moreover, multiple computing technologies, from edge to cloud to HPC, will be integrated into a unified and secure compute continuum. Specifically, the platform will feature enhanced data infrastructures and AI & big-data frameworks, novel data-driven orchestration and distributed monitoring mechanisms, a unified continuum abstraction and cyberse-curity and digital privacy across all software layers.</span>
-<button class="seemorebtn" onclick="seeMore('extract')" id="extractBtn">see more</button>
+<button class="seemorebtn" onclick="seeMore('extract')" id="extractBtn">see more ➕</button>
 </div>
 </div>
 </div>
@@ -186,11 +190,11 @@ function seeMore(buttonId) {
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
-    btnText.innerHTML = "see more";
+    btnText.innerHTML = "see more ➕";
     moreText.style.display = "none";
   } else {
     dots.style.display = "none";
-    btnText.innerHTML = "see less";
+    btnText.innerHTML = "see less ➖";
     moreText.style.display = "inline";
   }
 }
