@@ -1,31 +1,24 @@
-<br />
-<section id="footer">
-    <div class="container-footer">
-        <div class="panel-footer">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h5>About</h5>
-                    <p>{{ site.affiliation }}</p>
-                </div>
-
-                <div class="col-sm-4">
-                    <h5>Contact</h5>
-                    <p>{{ site.contact }}</p>
-                </div>
-
-                <div class="col-sm-4">
-                    <h5>Address</h5>
-                    <p>{{ site.location }}</p>
-                </div>
-            </div>
-
-            <center>
-                <p>Updated: {{ "now" | date: "%B %Y" }}</br>
-                    &copy {{ "now" | date: "%Y" }} {{site.title | escape }} </p>
-            </center>
+<footer id="footer">
+    <div class="row justify-content-md-center">
+        <div class="col-lg-auto">
+            <h5>About</h5>
+            <p>{{ site.affiliation }}</p>
+        </div>
+        <div class="col-lg-2">
+            <h5>Contact</h5>
+            <p>{{ site.contact }}</p>
+        </div>
+        <div class="col-lg-auto">
+            <h5>Address</h5>
+            <p>{{ site.location }}</p>
         </div>
     </div>
+    <div class="row justify-content-md-center mt-4">
+        <div class="col-lg-auto">
+            <p style="text-align: center;">
+                Updated: {{ "now" | date: "%B %Y" }}</br>
+                &copy {{ "now" | date: "%Y" }} {{ site.title | escape }}
+            </p>
+        </div>
     </div>
-
-    <script src="{{ "/assets/javascript/bootstrap/jquery.min.js" | relative_url }}"></script>
-    <script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
+</footer>

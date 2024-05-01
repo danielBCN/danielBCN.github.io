@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
-    {% include header.html %}
+  {% include header.html %}
 
-    <div class="container-fluid">
+  <div class="container">
+
+    <div class="page-header" id="banner">
       <div class="row">
         {{ content }}
       </div>
     </div>
 
     {% include footer.html %}
+  </div>
 
-  </body>
+  <script src="{{ "/assets/js/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
+  <!-- <script src="{{ "/assets/js/custom.js" | relative_url }}"></script> -->
+</body>
 
 </html>

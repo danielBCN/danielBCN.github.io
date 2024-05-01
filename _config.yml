@@ -12,9 +12,9 @@ google_analytics_4: G-RF6ZWT8MBM
 
 # Footer info
 affiliation: >
-    Daniel Barcelona-Pons, PhD<br/>
-    <a href="https://urv.cat" target="_blank"> Universitat Rovira i Virgili</a><br/>
-    <a href="https://deim.urv.cat/" target="_blank"> Enginyeria Informàtica i Matemàtiques<a/>
+    Daniel Barcelona-Pons, PhD <br/>
+    <a href="https://urv.cat" target="_blank"> Universitat Rovira i Virgili</a> <br/>
+    <a href="https://deim.urv.cat/" target="_blank"> Enginyeria Informàtica i Matemàtiques</a>
 
 location: >
   Enginyeria Informàtica i Matemàtiques<br/>
@@ -26,7 +26,7 @@ contact: >
     <a href="mailto:daniel.barcelona@urv.cat" target="_blank"><i class="fa fa-envelope fa-1x"></i> - Email</a> <br/>
     <a href="https://twitter.com/_daniel_BCN" target="_blank"><i class="fa fa-twitter fa-1x"></i> - Twitter</a> <br/>
     <a href="https://github.com/danielBCN" target="_blank"><i class="fa fa-github fa-1x"></i> - GitHub</a> <br/>
-    <a href="https://www.linkedin.com/in/daniel-barcelona-pons/" target="_blank"><i class="fa fa-linkedin fa-1x"></i> - LinkedIn</a> <br/>
+    <a href="https://www.linkedin.com/in/daniel-barcelona-pons/" target="_blank"><i class="fa fa-linkedin fa-1x"></i> - LinkedIn</a>
 
 # Pages shown in navbar
 nav_pages:

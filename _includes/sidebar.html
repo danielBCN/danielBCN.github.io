@@ -1,7 +1,7 @@
 <div>
 {% for member in site.data.pi %}
-<div class="jumbotron">
-   <center>
+<div class="jumbotron" style="padding: 2rem;">
+   <div style="text-align: center;">
    <a href="{{site.url}}{{site.baseurl}}/about"><img src="{{site.url}}{{site.baseurl}}/images/{{ member.photo_square }}" width="80%" style="block:inline; margin-left:auto; margin-right:auto; margin-bottom:5px;"/></a>
    <h4>{{ member.name }}</h4>
    <div style="margin-bottom:5px">
@@ -14,46 +14,48 @@
    {% if member.github %} <a href="{{ member.github }}" target="_blank"><i class="fa fa-github-square fa-3x"></i></a> {% endif %}
    {% if member.researchgate %} <a href="{{ member.researchgate }}" target="_blank"><i class="ai ai-researchgate-square ai-3x"></i></a> {% endif %}
   </div>
-  </center>
+</div>
 
-  <ul style="overflow: hidden">
+  <ul class="list-group" style="overflow: hidden">
   {% if member.number_educ == 1 %}
-  <li> {{ member.education1short | replace: "-","&#8211;"}} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+     {{ member.education1short | replace: "-","&#8211;"}}
+   </li>
   {% endif %}
 
   {% if member.number_educ == 2 %}
-  <li> {{ member.education1short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education2short | replace: "-","&#8211;"}} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> {{ member.education1short | replace: "-","&#8211;"}} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> {{ member.education2short | replace: "-","&#8211;"}} </li>
   {% endif %}
 
   {% if member.number_educ == 3 %}
-  <li> {{ member.education1short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education2short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education3short }} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> {{ member.education1short | replace: "-","&#8211;"}} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> {{ member.education2short | replace: "-","&#8211;"}} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> {{ member.education3short }} </li>
   {% endif %}
 
   {% if member.number_educ == 4 %}
-  <li> {{ member.education1short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education2short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education3short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education4short | replace: "-","&#8211;"}} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> {{ member.education1short | replace: "-","&#8211;"}} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> {{ member.education2short | replace: "-","&#8211;"}} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> {{ member.education3short | replace: "-","&#8211;"}} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> {{ member.education4short | replace: "-","&#8211;"}} </li>
   {% endif %}
 
   {% if member.number_educ == 5 %}
-  <li> {{ member.education1short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education2short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education3short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education4short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education5short | replace: "-","&#8211;"}} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> {{ member.education1short | replace: "-","&#8211;"}} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> {{ member.education2short | replace: "-","&#8211;"}} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> {{ member.education3short | replace: "-","&#8211;"}} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> {{ member.education4short | replace: "-","&#8211;"}} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> {{ member.education5short | replace: "-","&#8211;"}} </li>
   {% endif %}
 
   {% if member.number_educ == 6 %}
-  <li> {{ member.education1short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education2short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education3short | replace: "-","&#8211;"}} </li>
-  <li> {{ member.education4short | replace: "-","&#8211;"}} </li>
-  <!-- <li> {{ member.education5short | replace: "-","&#8211;"}} </li> -->
-  <li> {{ member.education6short | replace: "-","&#8211;"}} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> {{ member.education1short | replace: "-","&#8211;"}} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> {{ member.education2short | replace: "-","&#8211;"}} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> {{ member.education3short | replace: "-","&#8211;"}} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> {{ member.education4short | replace: "-","&#8211;"}} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> {{ member.education5short | replace: "-","&#8211;"}} </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> {{ member.education6short | replace: "-","&#8211;"}} </li>
   {% endif %}
   </ul>
 </div>

@@ -10,10 +10,10 @@ permalink: /about/
 {% for member in site.data.pi %}
 <div class="jumbotron">
 <div class="row">
-<div class="col-sm-4">
+<div class="col-lg-4" style="text-align: center;">
   <img src="{{ site.url }}{{ site.baseurl }}/images/{{ member.photo }}" width="100%" style="max-width:300px"/>
 </div>
-<div class="col-sm-8 col-xs-12">
+<div class="col-lg-8 col-sm-8 col-xs-12">
   <h3>{{ member.name }}</h3>
   <h4><i>{{ member.info }}</i></h4>
 
