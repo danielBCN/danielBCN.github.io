@@ -31,6 +31,19 @@ You can also check my
 <!-- Jump to: - [Preprints](#preprints) - [Journal articles](#journal-articles) - [Conference proceedings](#conference-proceedings) -->
 <!-- </div> -->
 
+<style>
+    pre {
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+        width: 100%;
+        overflow-x: auto;
+    }
+</style>
+<script src="{{ "/assets/js/publications.js" | relative_url }}"></script>
+
 <div class="jumbotron">
 ### Preprints
 {% bibliography --query @unpublished %}

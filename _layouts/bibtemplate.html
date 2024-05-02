@@ -2,30 +2,10 @@
 ---
 
 
-<style>
-    .btn {
-        margin-bottom: 20px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        padding-left: 15px;
-        padding-right: 15px;
-        height: 20px:
-    }
-
-    pre {
-        white-space: pre-wrap;
-        white-space: -moz-pre-wrap;
-        white-space: -pre-wrap;
-        white-space: -o-pre-wrap;
-        word-wrap: break-word;
-        width: 100%;
-        overflow-x: auto;
-    }
-</style>
-
+<div class="mb-3">
 
 <div>
-    <big><b>{{entry.title}}</b></big> ({{entry.year}}) <br/>
+    <big><b>{{entry.title}}</b></big> ({{entry.year}}) <br />
 
     {{reference | replace_first: 'Barcelona-Pons, D.', '<b>Barcelona-Pons, D.</b>' | replace_first: 'Daniel Barcelona-Pons', '<b>Daniel Barcelona-Pons</b>' }}
 </div>
@@ -44,34 +24,35 @@
 {% if entry.doi %}
 {% if entry.type == 'unpublished' %}
 <a href="{{ entry.doi | prepend: 'https://arxiv.org/abs/' }}" target="_blank"><button
-        class="btn btn-info btm-sm">ARXIV</button></a>
+        class="btn btn-info btn-sm">ARXIV</button></a>
 {% else %}
 <a href="{{ entry.doi | prepend: 'http://doi.org/' }}" target="_blank"><button
-        class="btn btn-info btm-sm">DOI</button></a>
+        class="btn btn-info btn-sm">DOI</button></a>
 {% endif %}
 {% else-if entry.url %}
 {% if entry.type == 'unpublished' or entry.type == 'phdthesis' %}
 {% if entry.url %}
 <a href="{{ entry.url }}" target="_blank"><button
-        class="btn btn-info btm-sm">URL</button></a>
+        class="btn btn-info btn-sm">URL</button></a>
 {% endif %}
 {% endif %}
 {% endif %}
 
 {% if entry.type == 'article' or entry.type == 'phdthesis' or entry.type == 'inproceedings' or entry.type == 'report' %}
-<button class="btn btn-success btm-sm" onclick="toggleBibtex{{entry.key}}()">BIB</button>
+<button class="btn btn-success btn-sm" onclick="toggleBibtex('{{entry.key}}')">BIB</button>
 {% endif %}
 
 {% if entry.abstract %}
-<button class="btn btn-secondary btm-sm" onclick="toggleAbstract{{entry.key}}()">ABSTRACT</button>
+<button class="btn btn-secondary btn-sm" onclick="toggleAbstract('{{entry.key}}')">ABSTRACT</button>
 {% endif %}
 
 {% if bibtest %}
 <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.pdf }}" target="_blank"><button
-        class="btn btn-primary btm-sm">PDF</button></a>
+        class="btn btn-primary btn-sm">PDF</button></a>
 {% endif %}
 
-<div id="a{{entry.key}}" style="display: none; background-color:var(--bs-light-bg-subtle); border-radius:5px; padding:10px; margin-bottom:20px;">
+<div id="a{{entry.key}}"
+    style="display: none; background-color:var(--bs-light-bg-subtle); border-radius:5px; padding:10px; margin-bottom:20px;">
     <pre>{{entry.bibtex}}</pre>
 </div>
 
@@ -81,21 +62,4 @@
     {{entry.abstract}}
 </div>
 
-<script>
-    function toggleBibtex{{ entry.key }}(parameter) {
-        var x = document.getElementById('a{{entry.key}}');
-        if (x.style.display === 'none') {
-            x.style.display = 'block';
-        } else {
-            x.style.display = 'none';
-        }
-    }
-    function toggleAbstract{{ entry.key }}(parameter) {
-        var x = document.getElementById('b{{entry.key}}');
-        if (x.style.display === 'none') {
-            x.style.display = 'block';
-        } else {
-            x.style.display = 'none';
-        }
-    }
-</script>
+</div>

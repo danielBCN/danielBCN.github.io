@@ -29,4 +29,3 @@ I'm passionate about computers and technology in general, and I love learning an
 My research interests span all aspects of distributed systems, focusing around software architectures, middleware, large-scale applications and cloud computing services, including data analytics and machine learning.
 
 Outside research, I enjoy video-games, sci-fi and fantasy stories, and psychology.
-
