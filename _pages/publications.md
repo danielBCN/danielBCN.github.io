@@ -23,7 +23,8 @@ years: [2016, 2017, 2018, 2019, 2020, 2021]
 
 You can also check my
 <a href="{{ member.orcid }}" target="_blank"> <i class="ai ai-orcid ai-1x"></i> ORCID</a>,
-<a href="{{ member.scholar }}" target="_blank"> <i class="ai ai-google-scholar ai-1x"></i> Google Scholar</a>, and
+<a href="{{ member.scholar }}" target="_blank"> <i class="ai ai-google-scholar ai-1x"></i> Google Scholar</a>,
+<a href="{{ member.semantic }}" target="_blank"> <i class="ai ai-semantic-scholar ai-1x"></i> Semantic Scholar</a>, and
 <a href="{{ member.dblp }}" target="_blank"> <i class="ai ai-dblp ai-1x"></i> dblp</a> profiles.
 
 {% endfor %}

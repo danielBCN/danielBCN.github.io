@@ -29,6 +29,9 @@
 <a href="{{ entry.doi | prepend: 'http://doi.org/' }}" target="_blank"><button
         class="btn btn-info btn-sm">DOI</button></a>
 {% endif %}
+{% else-if entry.eprint %}
+<a href="{{ entry.eprint | prepend: 'https://arxiv.org/abs/' }}" target="_blank"><button
+    class="btn btn-info btn-sm">ARXIV</button></a>
 {% else-if entry.url %}
 {% if entry.type == 'unpublished' or entry.type == 'phdthesis' %}
 {% if entry.url %}
