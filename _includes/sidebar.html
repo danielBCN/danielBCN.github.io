@@ -3,7 +3,7 @@
 <div class="jumbotron">
    <div style="text-align: center;">
    <a href="{{site.url}}{{site.baseurl}}/about"><img src="{{site.url}}{{site.baseurl}}/images/{{ member.photo_square }}" width="80%" style="block:inline; margin-left:auto; margin-right:auto; margin-bottom:5px;"/></a>
-   <h4>{{ member.name }}</h4>
+   <h3>{{ member.name }}</h3>
    <div style="margin-bottom:5px">
    {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-3x"></i></a> {% endif %}
    {% if member.cv %} <a href="{{ site.url }}{{ site.baseurl }}/{{ member.cv }}" target="_blank"><i class="ai ai-cv-square ai-3x"></i></a> {% endif %}

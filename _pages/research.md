@@ -114,6 +114,27 @@ The EXTRACT platform will improve the complete lifecycle of extreme data mining 
 
 
 <div class="jumbotron">
+<h4><a href="https://cloudlab-urv.github.io/cloudless.github.io/" target="_blank">CLOUDLESS: Edge information computing platform</a></h4>
+
+<div class="row justify-content-md-center">
+
+<div class="col-lg-4 align-self-center" style="text-align:center">
+<a href="https://cloudlab-urv.github.io/cloudless.github.io/" target="_blank"><img class="bg-white p-2" src="{{ site.url }}{{ site.baseurl }}/images/projects/CLOUDLESS_logo_sm.png" width="100%" style="max-width:300px"/></a>
+</div>
+
+<div class="col-lg-8 text-justify">
+**2023-2025**.
+Funded by the Ministry of Economic Affairs and Digital Transformation and by the European Union-NextGenerationEU, within the framework of the PRTR and the MRR.
+Programa UNICO I+D Cloud, en el marco del Plan de Recuperación, Transformación y Resiliencia -Financiado por la Unión Europea- Next Generation EU
+
+The objective of the CLOUDLESS project is to develop an edge computing platform for the creation and deployment of open Data Spaces (International Data Spaces). The platform will follow a decentralized distributed architecture that offers event-based open discovery and interconnection services (data brokers) to different data consumers (data consumers) and data providers (data providers). The architecture will also offer secure Cloud/Edge infrastructures that allow efficient data analysis (data connectors) based on variables such as locality, economic cost, privacy or latency. The platform will be validated in different open data spaces such as citizen science, tourism or omics data (genomics and metabolomics).
+
+</div>
+</div>
+</div>
+
+
+<div class="jumbotron">
 <h4><a href="https://iris.urv.cat/en/ipublic/item/8645659" target="_blank">High-performance serverless platform for hybrid Cloud-Edge systems</a></h4>
 
 <div class="row justify-content-md-center">
