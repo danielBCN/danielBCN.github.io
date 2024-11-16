@@ -93,7 +93,7 @@ scholar:
     - abstract
     - month_numeric
     - pdf
-    - url
+    # - url
 
   bibliography_list_attributes:
     reversed: "reversed"
