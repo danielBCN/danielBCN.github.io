@@ -1,3 +1,21 @@
+@inproceedings{eizaguirre2024serverful,
+  author    = {Eizaguirre, Germ\'{a}n T. and Barcelona-Pons, Daniel and Arjona, Aitor and Vernik, Gil and Garc\'{\i}a-L\'{o}pez, Pedro and Alexandrov, Theodore},
+  title     = {Serverful Functions: Leveraging Servers in Complex Serverless Workflows (industry track)},
+  year      = {2024},
+  isbn      = {9798400713194},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3700824.3701095},
+  doi       = {10.1145/3700824.3701095},
+  abstract  = {The scalability of cloud functions makes them a convenient backend for elastic data analytics pipelines where parallelism changes drastically from one stage to the next. However, cloud functions require intermediate storage systems for communication, which limits the efficiency of stateful operations. Furthermore, cloud functions are expensive, which reduces the cost-effectiveness of pure serverless architectures. We propose a hybrid architecture for data analytics that uses cloud functions for embarrassingly parallel stages and virtual cloud instances for stateful operations under a unified serverless programming framework. Extending Lithops, a serverless programming library, we implement a parallel programming interface that proactively provisions serverless and serverful cloud resources with minimal user intervention. We validate the feasibility of a hybrid architecture, by comparing it to fully serverless and serverful versions of a production-level metabolomics pipeline. We show that mixing cloud functions with virtual instances increases the cost-effectiveness of the execution by up to 188.23\% over the serverless implementation, while achieving a speedup of 3.64 compared to the serverful one.},
+  booktitle = {Proceedings of the 25th International Middleware Conference Industrial Track},
+  pages     = {15–21},
+  numpages  = {7},
+  keywords  = {Cloud computing, function-as-a-service, resource allocation, resource efficiency, serverless computing},
+  location  = {Hong Kong, Hong Kong},
+  series    = {Middleware Industrial Track '24},
+  pdf       = {2024-Middleware-Serverful_Functions.pdf}
+}
 
 @inproceedings{arjona2024dataplug,
   author    = { Arjona, Aitor and Garcia-Lopez, Pedro and Barcelona-Pons, Daniel },
@@ -14,7 +32,7 @@
   publisher = {IEEE Computer Society},
   address   = {Los Alamitos, CA, USA},
   month     = May,
-  pdf       = {CCGRID24-Dataplug.pdf}
+  pdf       = {2024-CCGRID-Dataplug.pdf}
 }
 
 @inproceedings{barcelonapons2019crucial,
@@ -33,7 +51,7 @@
   keywords  = {in-memory, FaaS, stateful, synchronization, Serverless},
   location  = {Davis, CA, USA},
   series    = {Middleware '19},
-  pdf       = {Middleware19-Crucial-On_the_FaaS_Track-Author_version.pdf}
+  pdf       = {2019-Middleware-Crucial-Author_version.pdf}
 }
 
 @inproceedings{barcelonapons2019faasorch,
@@ -52,7 +70,7 @@
   keywords  = {Serverless, FaaS, orchestration, event-based},
   location  = {Davis, CA, USA},
   series    = {WOSC '19},
-  pdf       = {WoSC19-FaaS_Orchestration.pdf}
+  pdf       = {2019-WoSC-FaaS_Orchestration.pdf}
 }
 
 @article{barcelonapons2021faasbench,
@@ -73,7 +91,7 @@
   pages      = {268–284},
   numpages   = {17},
   keywords   = {FaaS, Parallelism, Benchmark, Serverless},
-  pdf        = {FGCS-2021-Benchmarking_FaaS.pdf}
+  pdf        = {2021-FGCS-Benchmarking_FaaS.pdf}
 }
 
 @article{barcelonapons2022crucial,
@@ -94,7 +112,7 @@
   articleno  = {39},
   numpages   = {38},
   keywords   = {Serverless, synchronization, stateful, in-memory, FaaS},
-  pdf        = {TOSEM-2022-Crucial.pdf}
+  pdf        = {2022-TOSEM-Crucial.pdf}
 }
 
 @phdthesis{barcelonapons2022thesis,
@@ -124,7 +142,7 @@
   keywords  = {Serverless, stateful, cloud, near-data, ephemeral, intermediate data},
   location  = {Bologna, Italy},
   series    = {Middleware '23},
-  pdf       = {Middleware23-Glider-Author_version.pdf}
+  pdf       = {2023-Middleware-Glider-Author_version.pdf}
 }
 
 @inproceedings{garcialopez2018comparefaas,
