@@ -96,7 +96,7 @@ At the university, I've assisted teaching Advanced Programming Techniques and Di
 - (Dec 2022 - Sep 2024) **Researcher** @ Universitat Rovira i Virgili (CloudLab)
 - (Mar 2022 - May 2022) **PhD Internship** @ IBM Research (Zurich)
 - (Oct 2018 - Dec 2022) **PhD Candidate** @ Universitat Rovira i Virgili (CloudLab)
-- (Apr 2016 - Sep 2018) **Researche Project Intern** @ Universitat Rovira i Virgili (CloudLab)
+- (Apr 2016 - Sep 2018) **Research Assistant** @ Universitat Rovira i Virgili (CloudLab)
 
 </div>
 
