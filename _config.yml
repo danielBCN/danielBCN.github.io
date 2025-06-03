@@ -1,6 +1,6 @@
 # Site settings
 title: Daniel Barcelona-Pons
-email: daniel.barcelona@bsc.es
+email: daniel.barcelona@urv.cat
 description: Academic webpage of Dr. Daniel Barcelona-Pons
 baseurl: ""
 url: "https://danielbcn.com"
@@ -12,20 +12,17 @@ google_analytics_4: G-RF6ZWT8MBM
 
 # Footer info
 affiliation: >
-    Daniel Barcelona-Pons <br/>
-    PhD, Computer Science <br/>
-    <a href="https://bsc.es" target="_blank"> Barcelona Supercomputing Center</a> <br/>
-# Computer Sciences - Data-Centric Computing
-# <a href="https://deim.urv.cat/" target="_blank"> Enginyeria Informàtica i Matemàtiques</a>
+    Daniel Barcelona-Pons, PhD <br/>
+    <a href="https://deim.urv.cat/" target="_blank"> Enginyeria Informàtica i Matemàtiques</a> <br/>
+    <a href="https://urv.cat" target="_blank"> Universitat Rovira i Virgili</a> <br/>
 
 location: >
-  Enginyeria Informàtica i Matemàtiques<br/>
-  Universitat Rovira i Virgili<br/>
+  Escola Tècnica Superior d'Enginyeria<br/>
   Av. Països Catalans, 26<br/>
   43007 Tarragona (Spain)
 
 contact: >
-    <a href="mailto:daniel.barcelona@bsc.es" target="_blank"><i class="fa fa-envelope fa-1x"></i> - Email</a> <br/>
+    <a href="mailto:daniel.barcelona@urv.cat" target="_blank"><i class="fa fa-envelope fa-1x"></i> - Email</a> <br/>
     <a href="https://github.com/danielBCN" target="_blank"><i class="fa fa-github fa-1x"></i> - GitHub</a> <br/>
     <a href="https://www.linkedin.com/in/daniel-barcelona-pons/" target="_blank"><i class="fa fa-linkedin fa-1x"></i> - LinkedIn</a> <br/>
 

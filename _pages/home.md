@@ -9,8 +9,7 @@ permalink: /
 
 Hi everyone! Welcome to my website!
 
-I'm Daniel, a researcher at <a href="https://bsc.es">Barcelona Supercomputing Center</a> in the Department of Computer Sciences and part of the Data-Centric Computing team.
-I have a Ph.D in computer science from <a href="https://urv.cat">Universitat Rovira i Virgili</a>.
+I'm Daniel, a professor at <a href="https://urv.cat" target="_blank">Universitat Rovira i Virgili</a> in the <a href="https://deim.urv.cat" target="_blank">Department of Computer Engineering</a> and part of the <a href="https://cloudlab.urv.cat" target="_blank">CloudLab</a> research group.
 
 <!-- <div class="container">
 <div class="row">
