@@ -18,9 +18,9 @@
 }
 
 @inproceedings{arjona2024dataplug,
-  author    = { Arjona, Aitor and Garcia-Lopez, Pedro and Barcelona-Pons, Daniel },
-  booktitle = { 2024 IEEE 24th International Symposium on Cluster, Cloud and Internet Computing (CCGrid) },
-  title     = {{ Dataplug: Unlocking extreme data analytics with on-the-fly dynamic partitioning of unstructured data }},
+  author    = {Arjona, Aitor and Garcia-Lopez, Pedro and Barcelona-Pons, Daniel},
+  booktitle = {2024 IEEE 24th International Symposium on Cluster, Cloud and Internet Computing (CCGrid)},
+  title     = {Dataplug: Unlocking extreme data analytics with on-the-fly dynamic partitioning of unstructured data},
   year      = {2024},
   volume    = {},
   issn      = {},
@@ -158,3 +158,17 @@
   pdf       = {https://arxiv.org/pdf/1807.11248}
 }
 
+@inproceedings{barcelonapons2025burst,
+  title     = {Burst Computing: Quick, Sudden, Massively Parallel Processing on Serverless Resources},
+  author    = {Barcelona-Pons, Daniel and Arjona, Aitor and Garc{\'\i}a-L{\'o}pez, Pedro and Molina-Gim{\'e}nez, Enrique and Klymonchuk, Stepan},
+  booktitle = {2025 USENIX Annual Technical Conference (USENIX ATC 25)},
+  year      = {2025},
+  isbn      = {978-1-939133-48-9},
+  pages     = {39--56},
+  publisher = {USENIX Association},
+  month     = jul,
+  address   = {Santa Clara, CA},
+  url       = {https://www.usenix.org/conference/atc25/presentation/barcelona-pons},
+  pdf       = {https://www.usenix.org/system/files/atc25-barcelona-pons.pdf},
+  abstract  = {We present burst computing, a novel serverless solution tailored for burst-parallel jobs. Unlike Function-as-a-Service (FaaS), burst computing establishes job-level isolation using a novel group invocation primitive to launch large groups of workers with guaranteed simultaneity. Resource allocation is optimized by packing workers into fewer containers, which accelerates their initialization and enables locality. Locality significantly reduces remote communication compared to FaaS and, combined with simultaneity, it allows workers to communicate synchronously with message passing and group collectives. Consequently, applications unfeasible  n FaaS are now possible. We implement burst computing atop OpenWhisk and provide a communication middleware that seamlessly leverages locality with zero-copy messaging. Evaluation shows reduced job invocation and communication latency for a 2× speed-up in TeraSort and a 98.5\% reduction in remote communication in PageRank (13× speed-up) compared to standard FaaS.}
+}
